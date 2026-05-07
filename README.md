@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💰 Finance Tracker Backend API
 
 ## 📌 Project Overview
@@ -256,3 +257,6 @@ Developed as an industry-level backend project for learning scalable backend arc
 - Kubernetes Deployment
 - CI/CD Pipeline
 
+=======
+# finance-project
+>>>>>>> db967e208e069dbedf25bdbc09964aaa97aad0e9
