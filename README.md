@@ -59,7 +59,7 @@ This project was built with an industry-level backend architecture using:
 
 | Technology | Purpose |
 |---|---|
-| Java 17 | Programming Language |
+| Java 21 | Programming Language |
 | Spring Boot | Backend Framework |
 | Spring Security | Authentication & Authorization |
 | JWT | Stateless Security |
