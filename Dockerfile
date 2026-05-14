@@ -1,5 +1,17 @@
+# Build stage
+FROM maven:3.9.6-eclipse-temurin-22 AS build
+
+WORKDIR /app
+
+COPY . .
+
+RUN mvn clean package -DskipTests
+
+# Run stage
 FROM openjdk:22-jdk-slim
 
-COPY target/finance-app.jar app.jar
+WORKDIR /app
 
-ENTRYPOINT ["java","-jar","/app.jar"]
+COPY --from=build /app/target/*.jar app.jar
+
+ENTRYPOINT ["java","-jar","app.jar"]
