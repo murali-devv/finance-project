@@ -89,4 +89,9 @@ public class AuthController {
 
         return ResponseEntity.ok(response);
     }
+
+    @GetMapping("/")
+    public String home() {
+        return "Finance App Running Successfully 🚀";
+    }
 }
